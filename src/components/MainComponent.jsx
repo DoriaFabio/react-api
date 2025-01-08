@@ -4,7 +4,7 @@ import Card from "./Card.jsx";
 // import blog from "../data/posts.js"
 
 // const apiUrl = "https://rickandmortyapi.com/api/character";
-const apiUrl = "http://localhost:5500/posts"
+const apiUrl = import.meta.env.VITE_API_URL;
 function MainComponent() {
   const [post, setPost] = useState([]);
   // const [character, setCharacters] = useState([]);
